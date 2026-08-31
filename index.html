@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2563eb">
+  <title>لعبة قواعد البيانات - الصف التاسع</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="icon">💻</div>
+      <h1>لعبة قواعد البيانات</h1>
+      <p>مادة تقنية المعلومات - الصف التاسع</p>
+    </header>
+
+    <section id="home" class="card">
+      <h2>اختر الدرس</h2>
+      <p class="muted">كل درس يحتوي على 5 أسئلة. اختر درسًا وابدأ التحدي.</p>
+      <div id="lessonGrid" class="lesson-grid"></div>
+      <div class="all-test">
+        <button class="btn primary" id="allTestBtn">🎯 اختبار جميع الدروس (25 سؤالًا)</button>
+      </div>
+    </section>
+
+    <section id="quiz" class="card hidden">
+      <div class="quiz-top">
+        <span id="lessonName" class="badge"></span>
+        <span id="scoreLive" class="score-live">الدرجة: 0</span>
+      </div>
+      <div class="progress"><div id="progressBar"></div></div>
+      <div class="question-meta" id="questionMeta"></div>
+      <h2 id="questionText"></h2>
+      <div id="options" class="options"></div>
+      <div id="feedback" class="feedback hidden"></div>
+      <div class="actions">
+        <button class="btn secondary" id="backBtn">↩ العودة</button>
+        <button class="btn primary" id="nextBtn">السؤال التالي →</button>
+      </div>
+    </section>
+
+    <section id="result" class="card hidden result-card">
+      <div class="trophy">🏆</div>
+      <h2>انتهى الاختبار!</h2>
+      <div id="finalScore" class="final-score"></div>
+      <p id="resultMessage"></p>
+      <div class="result-actions">
+        <button class="btn secondary" id="homeBtn">📚 اختيار درس آخر</button>
+        <button class="btn primary" id="restartBtn">🔄 إعادة الاختبار</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
